@@ -36,8 +36,10 @@ const { id, data } = Astro.props;
           {formatFrontmatterDate(data.pubDate)}
         </time>
       </p>
-      <h3 class="h5 my-4 group-hover:underline">{data.title}</h3>
-      <p class="mb-6">{data.description}</p>
+      <h3 class="font-semibold text-xl sm:text-2xl my-4 group-hover:underline">
+        {data.title}
+      </h3>
+      <p class="mb-6 text-sm sm:text-base">{data.description}</p>
 
       <button
         class="btn btn-outline hover:bg-main hover:text-white hover:border-main rounded-lg mt-auto"

@@ -94,4 +94,11 @@
 
 .fadeIn {
   animation-name: fadeIn;
+
+}
+
+.breadcrumbs {
+    li {
+        @apply whitespace-pre-wrap;
+    }
 }

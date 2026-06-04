@@ -47,8 +47,10 @@ const { id, data } = Astro.props;
       </time>
     </p>
     <a href={`/blog/${id}`} class="flex-1 flex flex-col justify-between w-full">
-      <h3 class="h5 group-hover:underline">{data.title}</h3>
-      <p class="mb-6 mt-4">{data.description}</p>
+      <h3 class="font-semibold text-xl sm:text-2xl group-hover:underline">
+        {data.title}
+      </h3>
+      <p class="mb-6 text-sm sm:text-base">{data.description}</p>
 
       <button
         class="btn bg-main border-main text-white rounded-lg hover:bg-green-600 w-full mt-auto"
