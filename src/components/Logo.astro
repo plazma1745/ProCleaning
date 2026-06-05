@@ -10,6 +10,13 @@ const { mode = "light" } = Astro.props;
     width="204"
     height="50"
     fetchpriority="high"
-    class="w-auto h-auto"
+    class="w-auto h-auto dark:hidden"
+  />
+   <Image
+    src="/img/logo-w.svg"
+    alt="logo"
+    width="204"
+    height="50"
+    class="hidden dark:block"
   />
 </a>
